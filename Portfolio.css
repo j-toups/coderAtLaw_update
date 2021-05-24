@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*HEADER*/
+h1 {
+    font-size: 100px;
+    padding-left: 10px;
+}
+
+/* Beginning of the nav bar in header */
+
+.header a:hover {
+    background-color: goldenrod;
+}
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+} 
+.header li {
+    float: right;
+}
+.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.header div ul li {
+    font-size: 25px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+@media all and (max-width: 600px) {
+    h1 {font-size: 40px;}
+    .header div ul li {font-size: 15px;}
+}
+
+@media all and (max-width: 375px) {
+    h1 {font-size: 40px;}
+    .header div ul li {font-size: 10px;
+    margin-left: 0px;}
+}
+
+/*end of Header; end Nav in header*/
+
+/* BODY */
+
+body {
+    padding: 20px;
+    font-family: "Roboto Mono", monospace;
+}
+
+.jumbotron {
+    background-image: url("./Assets/mnt\ landscape.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+  
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+  
+.row {
+    margin: 8px -16px;
+}
+  
+.row, .row > .column {
+    padding: 8px;
+}
+  
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+.column a:hover{
+    background-color: goldenrod;
+    text-decoration: none;
+    color:white;
+    display: block;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Content */
+.content {
+    padding: 10px;
+}
+  
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+}
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+
+
+/*Colors and Refined Details*/
+
+.border {
+    border-collapse: collapse;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 3px;
+}
+
+.headshot {
+    width: 200px; 
+    height: auto;
+    margin-top:10px;
+}
+
+.image-size {
+    height: 100px;
+    width: 110px;
+}
+.image-size li:before {
+    content:attr(title);
+    display: block;
+}
+
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    right: 0%;
+}
+
+/*below is text size and growth for main*/
+
+.mainbox {
+    font-size: 16px; 
+    display: inline-block;
+    margin-left: 20px; 
+}
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}
+@media all and (max-width: 800px) {
+    .main-box {font-size: 14px;}
+}
+@media all and (max-width: 600px) {
+    .main-box {font-size: 12px;}
+}
+
+@media all and (max-width:400px) {
+    .main-box {font-size: 10px;}
+}
+.main-box::after {
+    content: normal;
+    display:table;
+    clear: both;
+}
+
+/*FOOTER*/
+
+.footer {
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px;
+    text-align: center;
+}
+
+h4 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+
+
